@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate and download conclusion paragraphs as PDF.">
+    <title>Conclusion Generator PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 jsPDF 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Conclusion Generator PDF</h1>
+        <p>Easily generate and download conclusion paragraphs as PDF files.</p>
+    </header>
+    <main>
+        <section>
+            <textarea id="input-text" placeholder="Paste your article or paragraph here..."></textarea>
+            <button id="generate-btn">Generate Conclusion</button>
+        </section>
+        <section id="conclusion-section" style="display:none;">
+            <h2>Generated Conclusion</h2>
+            <p id="conclusion-text"></p>
+            <button id="download-pdf-btn">Download as PDF</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Conclusion Generator. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
